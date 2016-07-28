@@ -1,6 +1,8 @@
 #ifndef BOILPOWER_HWPROFILE_H_
 #define BOILPOWER_HWPROFILE_H_
 
+#include <avr/io.h> 
+
 //Display output registers
 #define DISPLAY_CHAR_SELECT_OUTPUT_REG PORTC
 #define DISPLAY_CHAR_OUTPUT_REG        PORTD
@@ -76,6 +78,11 @@ static const uint8_t kPwmPinMask      = 0x04;
 
 
 //OneWire PB3
+#define ONEWIRE_INPUT_REG PINB
+#define ONEWIRE_OUTPUT_REG PORTB
+#define ONEWIRE_DIR_REG DDRB
+static const uint8_t kOnewirePinMask      = 0x08;
+
 //Option PB4
 
 #endif

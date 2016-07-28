@@ -11,6 +11,7 @@ int main(void)
   status_init();
   display_init();
   encoder_init();
+  onewire_init();
 
   struct BoilPowerSettings systemSettings;
   settings_load(&systemSettings);

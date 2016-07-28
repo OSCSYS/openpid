@@ -9,6 +9,7 @@
 #include "hwprofile.h"
 #include "pwm.h"
 #include "status.h"
+#include "onewire.h"
 
 enum UiState {
   kUiStateOff,
